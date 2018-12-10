@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Steel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+
+
+
+    <link rel="stylesheet" href="static/css/steel.css">
+    <!-- Latest compiled and minified Bootstrap 4.1.1 CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+
+</head>
+
+<body id="body">
+    <br> <br>
+    <div id="output">
+        <input type="button" id="start" class="btn btn-success form-control " value="Start the experment">
+        <br> <br> 
+        <h3 class="text-center">{{ test.notes }}</h3>
+        <h3 class="text-center">{{ notes }}</h3>
+        <br>
+
+        <div id="image" class="text-center container">
+
+            </div>
+    </div>
+
+    <div class="container hide">
+        <form id=form method="GET">
+            <div>
+                    <h4>Steel Type:</h4>
+                    <input class="steeltype" name="steeltype"  value="1080" type="radio">
+                    1080 &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+
+                    <input class="steeltype" name="steeltype" value="4047" type="radio">
+                    4047 &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+
+                    <input class="steeltype" name="steeltype" value="4118" type="radio">
+                    4118 &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+
+                    <input class="steeltype" name="steeltype" value="4130" type="radio">
+                    4130 &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+
+                    <input class="steeltype" name="steeltype" value="4140" type="radio">
+                    4140 &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+
+                    <input class="steeltype" name="steeltype" value="4620" type="radio">
+                    4620 &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+
+                    <input class="steeltype" name="steeltype" value="5160" type="radio">
+                    5160 &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+
+                    <input class="steeltype" name="steeltype" value="6150" type="radio">
+                    6150 &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+
+                    <input class="steeltype" name="steeltype" value="8617" type="radio">
+                    8617 &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+
+                    <input class="steeltype" name="steeltype" value="8620" type="radio">
+                    8620 &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+
+                    <input class="steeltype" name="steeltype" value="8645" type="radio">
+                    8645 &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+
+                    <input class="steeltype" name="steeltype" value="9310" type="radio">
+                    9310 &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+
+
+
+
+
+
+                    <div class="reveal-if-active">
+                        <div>
+                        <h4>Heat treatment Type:</h4>
+                        <input class="Heat-treatment" name="Heat-treatment" value="annealed" type="radio">
+                        annealed &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                        <input class="Heat-treatment" name="Heat-treatment" value="austenitizing" type="radio">
+                        austenitizing &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                        <input class="Heat-treatment" name="Heat-treatment" value="carbonitrieding" type="radio">
+                        carbonitrieding &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                        <input class="Heat-treatment" name="Heat-treatment" value="carburizing" type="radio">
+                        carburizing &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                        <input class="Heat-treatment" name="Heat-treatment" value="normalizing" type="radio">
+                        normalizing &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                        <input class="Heat-treatment" name="Heat-treatment" value="quenching" type="radio">
+                        quenching &nbsp&nbsp&nbsp&nbsp&nbsp<br><br><br>
+
+
+                        <div class="reveal-if-active">
+                            <div>
+                                <h4>Heating temp in &#8451:</h4>
+
+                                <input class="Heat-Temp" name="Heat-Temp" value="815" type="radio">
+                                815 &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+
+
+                                <input class="Heat-Temp" name="Heat-Temp" value="830" type="radio">
+                                830 &nbsp&nbsp&nbsp&nbsp&nbsp<br> 
+
+                                <input class="Heat-Temp" name="Heat-Temp" value="845" type="radio">
+                                845 &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+
+                                <input class="Heat-Temp" name="Heat-Temp" value="870" type="radio">
+                                870 &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+
+                                <input class="Heat-Temp" name="Heat-Temp" value="880" type="radio">
+                                880 &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+
+                                <input class="Heat-Temp" name="Heat-Temp" value="885" type="radio">
+                                885 &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+
+                                <input class="Heat-Temp" name="Heat-Temp" value="900" type="radio">
+                                900 &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+
+                                <input class="Heat-Temp" name="Heat-Temp" value="925" type="radio">
+                                925 &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+
+                                <input class="Heat-Temp" name="Heat-Temp" value="940" type="radio">
+                                940 &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+
+                                <input class="Heat-Temp" name="Heat-Temp" value="1050" type="radio">
+                                1050 &nbsp&nbsp&nbsp&nbsp&nbsp<br> <br>
+
+
+
+                                <div class="reveal-if-active">
+                                    <div>
+                                        <h4> Holding time:</h4>
+
+                                        <input class="Holding-time" name="Holding-time" value="0 hour" type="radio">
+                                        0 hour &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+
+                                        <input class="Holding-time" name="Holding-time" value="5 min" type="radio">
+                                        5 min &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+
+                                        <input class="Holding-time" name="Holding-time" value="20 min" type="radio">
+                                        20 min &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+
+                                        <input class="Holding-time" name="Holding-time" value="30 min" type="radio">
+                                        30 min &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+
+                                        <input class="Holding-time" name="Holding-time" value="1 hour" type="radio">
+                                        1 hour &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+
+                                        <input class="Holding-time" name="Holding-time" value="2 hour" type="radio">
+                                        2 hour &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+
+
+                                        <input class="Holding-time" name="Holding-time" value="3 hour" type="radio">
+                                        3 hour &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+
+                                        <input class="Holding-time" name="Holding-time" value="4 hour" type="radio">
+                                        4 hour &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+
+                                        <input class="Holding-time" name="Holding-time" value="8 hour" type="radio">
+                                        8 hour &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+
+                                        <input class="Holding-time" name="Holding-time" value="11 hour" type="radio">
+                                        11 hour &nbsp&nbsp&nbsp&nbsp&nbsp<br> <br>
+
+
+                                        <div class="reveal-if-active">
+                                            <div>
+                                                <h4>Cooling media:</h4>
+                                                <input class="cooling-media" name="cooling-media" value="oil" type="radio">
+                                                oil &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                                <input class="cooling-media" name="cooling-media" value="furnace" type="radio">
+                                                furnace &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                                <input class="cooling-media" name="cooling-media" value="air" type="radio">
+                                                air &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                                <input class="cooling-media" name="cooling-media" value="water" type="radio">
+                                                water &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+
+                                                <input type="submit" name="check" id="check" class="btn btn-success  " value="check">
+                                                        <br>
+                                                        <br>
+                                                        <br>
+
+
+
+
+                                                        <br>
+                                                        <br>
+                                                        <br>
+                                                        <br>
+                                                        <br>
+                                                        <br>
+                                                        <br>
+                                                        <br>
+                                                        <br>
+
+                                                <!-- <div class="reveal-if-active">
+                                                        <h4>microstructure</h4>
+                                                        <input class="microstructure" name="microstructure" value="1" type="radio">
+                                                        1 &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                                        <input class="microstructure" name="microstructure" value="2" type="radio">
+                                                        2 &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                                        <input class="microstructure" name="microstructure" value="3" type="radio">
+                                                        3 &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                                        <input class="microstructure" name="microstructure" value="4" type="radio">
+                                                        4 &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+
+                                                        <input type="button" id="check" class="btn btn-success  " value="check">
+                                                        <br>
+                                                        <br>
+                                                        <br>
+
+
+                                                        <div id="image">
+
+
+                                                            </div>
+
+                                                        <br>
+                                                        <br>
+                                                        <br>
+                                                        <br>
+                                                        <br>
+                                                        <br>
+                                                        <br>
+                                                        <br>
+                                                        <br>
+                
+                
+                                                </div> -->
+
+                                            </div>
+           
+                                        </div>
+
+                                    </div>
+       
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+            </form>
+
+
+                    </div>
+                    </div>
+                    </div>
+
+
+                    </div>
+                    
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+                </div>
+
+              
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+
+
+
+    <script src="static/js/steel.js"></script>
+
+    <script>
+
+        $(function () {
+            console.log("ready!");
+            $(".hide").hide()
+
+            $("#start").on("click", function()
+
+            {
+                $("#output").remove()
+                $(".hide").show()
+                $("#start").hide()
+
+            }
+            
+            
+            
+            );
+
+
+            
+
+ $check = $("#check");
+
+$check.click(function () {
+
+
+    console.log(radioValueSteel);
+    console.log(radioValueTreat);
+    console.log(radioValueTemp);
+    console.log(radioValueHold);
+    console.log(radioValueCool);
+    console.log(radioValueMirco);
+    
+    var img = (String("img/" + radioValueSteel + radioValueTreat +  radioValueTemp + radioValueHold + radioValueCool + radioValueMirco+ ".jpg"))
+
+
+   
+
+});
+
+         });
+    </script>
+
+{% if test %}
+<script>document.getElementById("image").innerHTML="<img   class=\"img-fluid\" src=\"media/{{ test.image }}\"/>"; </script>
+{% endif %}
+
+
+</body>
+
+</html>
